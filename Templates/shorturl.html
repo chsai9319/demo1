@@ -1,0 +1,27 @@
+<center>
+{% extends "base.html" %}
+{% block title %}Short URL{% endblock %}
+<style>
+        .GFG {
+            background-color: Blue;
+            border: 2px solid black;
+            color: green;
+            padding: 5px 10px;
+            text-align: center;
+            display: inline-block;
+            font-size: 20px;
+            margin: 10px 30px;
+            cursor: pointer;
+
+        }
+
+    </style>
+{% block content %}
+    <font size="10" face="Inconsolata" color="blue">http://127.0.0.1:4000/{{short_url_display}}</font>
+    <br>
+    <button class="GFG" onclick="window.location.href='http://127.0.0.1:4000';">BACK TO HOME</button>
+    <br>
+    <button class="GFG" onclick="window.location.href='http://127.0.0.1:4000/{{short_url_display}}';">link to shortened url</button>
+{% endblock %}
+
+</center>
